@@ -1,0 +1,6 @@
+framework module Pods_Fixter_FixterUITests {
+  umbrella header "Pods-Fixter-FixterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
