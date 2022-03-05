@@ -20,6 +20,7 @@
 ### Notes
 Describe any challenges encountered while building the app.
 
+I ahd problems with layout, but then readjusted the PosterView, and it worked out!
 
 
 
