@@ -64,5 +64,18 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             cell.posterView.af.setImage(withURL: posterURL!)
             return cell
     }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = myTableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movies = movie
+        
+        myTableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
